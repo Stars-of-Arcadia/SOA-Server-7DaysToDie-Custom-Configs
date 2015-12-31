@@ -316,11 +316,11 @@
 	<lootgroup name="empty"/>
 	
 	<lootgroup name="ammo" count="1,3">
-		<item name="shotgunShell" count="1,10"/>
-		<item name="9mmBullet" count="1,20"/>
-        <item name="10mmBullet" count="1,20"/>
-        <item name="762mmBullet" count="1,20" prob="0.1" />
-        <item name="44MagBullet" count="1,12" prob="0.2" />
+		<item name="shotgunShell" count="1,10" prob="0.8"/>
+		<item name="9mmBullet" count="1,15" />
+        <item name="10mmBullet" count="1,30" prob="0.6"/>
+        <item name="762mmBullet" count="1,20" prob="0.1"/>
+        <item name="44MagBullet" count="1,12" prob="0.1" />
 	</lootgroup>
 	
 	<lootgroup name="hazmatGear">
@@ -396,40 +396,40 @@
         <item name="pistol_parts"/>       
         <item name="pistol_receiver"/>     
         <item name="pistol_grip"/>
-        <item name="PumpShotgun_barrel"/>        	
-		<item name="PumpShotgun_parts"/>	
-        <item name="PumpShotgun_shortBarrel"/>   
-        <item name="PumpShotgun_shortStock"/>      
-        <item name="PumpShotgun_stock"/>	     
-        <item name="PumpShotgun_receiver"/> 
-        <item name="huntingRifleBarrel"/>       
-        <item name="huntingRifleStock"/>	
-        <item name="huntingRifleReceiver"/>	
-        <item name="huntingRifleParts"/>   
-		<item name="scopedHuntingRifleParts"/>
-		<item name="rifleScope"/>
-		<item name="Suppressor"/>
+        <item name="PumpShotgun_barrel" prob="0.75"/>        	
+		<item name="PumpShotgun_parts" prob="0.75"/>	
+        <item name="PumpShotgun_shortBarrel" prob="0.75"/>   
+        <item name="PumpShotgun_shortStock" prob="0.75"/>      
+        <item name="PumpShotgun_stock" prob="0.75"/>	     
+        <item name="PumpShotgun_receiver" prob="0.75"/> 
+        <item name="huntingRifleBarrel" prob="0.5"/>       
+        <item name="huntingRifleStock" prob="0.5"/>	
+        <item name="huntingRifleReceiver" prob="0.5"/>	
+        <item name="huntingRifleParts" prob="0.5"/>   
+		<item name="scopedHuntingRifleParts" prob="0.5"/>
+		<item name="rifleScope" prob="0.1"/>
+		<item name="Suppressor" prob="0.1"/>
 	</lootgroup>
 	
 	<lootgroup name="militaryWeaponParts">
-		<item name="mp5_barrel"prob="0.7"/>
-        <item name="mp5_stock"prob="0.7"/>
-        <item name="mp5_receiver"prob="0.7"/>
-        <item name="mp5_parts"prob="0.7"/>
-		<item name="ak47_barrel"prob="0.5"/>
-        <item name="ak47_stock"prob="0.5"/>
-        <item name="ak47_receiver"prob="0.5"/>
-        <item name="ak47_parts"prob="0.5"/>		
-        <item name="sniperRifleBarrel"prob="0.3"/> 	
-        <item name="sniperRifle_stock"prob="0.3"/>
-        <item name="sniperRifle_triggerHousing"prob="0.3"/>	
-        <item name="sniperRifleParts"prob="0.30"/>
-		<item name="rocketLauncherBarrel"prob="0.1"/> 	
-		<item name="rocketLauncherStock"prob="0.1"/> 	
-		<item name="rocketLauncherReceiver"prob="0.1"/> 	
-		<item name="rocketLauncherParts"prob="0.01"/> 	
-		<item name="smgSchematics"prob="0.1"/> 
-		<item name="ak47Schematic"prob="0.05"/> 
+		<item name="mp5_barrel" prob="0.8"/>
+        <item name="mp5_stock" prob="0.8"/>
+        <item name="mp5_receiver" prob="0.8"/>
+        <item name="mp5_parts" prob="0.9"/>
+		<item name="ak47_barrel" prob="0.5"/>
+        <item name="ak47_stock" prob="0.5"/>
+        <item name="ak47_receiver" prob="0.5"/>
+        <item name="ak47_parts" prob="0.6"/>		
+        <item name="sniperRifleBarrel" prob="0.25"/> 	
+        <item name="sniperRifle_stock" prob="0.25"/>
+        <item name="sniperRifle_triggerHousing" prob="0.25"/>	
+        <item name="sniperRifleParts" prob="0.3"/>
+		<item name="rocketLauncherBarrel" prob="0.05"/> 	
+		<item name="rocketLauncherStock" prob="0.05"/> 	
+		<item name="rocketLauncherReceiver" prob="0.05"/> 	
+		<item name="rocketLauncherParts" prob="0.07"/> 	
+		<item name="smgSchematics" prob="0.7"/>3 
+		<item name="ak47Schematic" prob="0.3"/> 
 		<item name="rocketLauncherSchematic" prob="0.01"/> 
 	</lootgroup>	
 	
@@ -444,8 +444,8 @@
 		
 	<lootgroup name="guns+ammo">
 		<item group="commonWeaponParts" />
-		<item group="pistol+ammo" prob="0.07" />
-		<item group="shotgun+ammo" prob="0.03" />
+		<item group="pistol+ammo" prob="0.05" />
+		<item group="shotgun+ammo" prob="0.02" />
 		<item group="huntingRifle+ammo" prob="0.01"/>
 		<item group="gunparts" prob="0.1"/>
 	</lootgroup>
@@ -465,34 +465,34 @@
 	</lootgroup>
 	
 	<lootgroup name="rareBooks" count="1">
-		<item name="macDyverBook" prob="0.1"/>		
-		<item name="setInConcrete" prob="0.05"/>
+		<item name="macDyverBook" prob="0.5"/>
+		<item name="setInConcrete" prob="0.3"/>
 		<item name="theRiddleOfSteel" prob="0.1"/>
-		<item name="minibikesForDumbshits" prob="0.05"/>
-		<item name="clubSpikedSchematic" prob="0.5"/>		
-		<item name="gasCanSchematic" prob="0.2"/>			
+		<item name="minibikesForDumbshits" prob="0.5"/>
+		<item name="clubSpikedSchematic" />
+		<item name="gasCanSchematic" prob="0.5"/>
 		<item name="flamingArrowSchematic" prob="0.5"/>
-		<item name="sledgehammerSchematic" prob="0.5"/>	
+		<item name="sledgehammerSchematic" prob="0.7"/>
 		<item name="ironHelmetSchematic" prob="0.2"/>
-		<item name="ironChestArmorSchematic" prob="0.2"/>		
-		<item name="ironLegArmorSchematic" prob="0.2"/>		
-		<item name="ironBootsSchematic" prob="0.2"/>				
-		<item name="ironGlovesSchematic" prob="0.2"/>	
-		<item name="theEnforcerMagazine" prob="0.01"/>
-		<item name="smgSchematics" prob="0.2"/>								
-		<item name="sniperRifleSchematic" prob="0.1"/>	
-		<item name="shotgunSlugSchematic" prob="0.5"/>	
-		<item name="handleBarsSchematic" prob="0.05"/>						
-		<item name="10mmBulletSchematic" prob="0.4"/>					
-		<item name="762mmBulletSchematic" prob="0.3"/>
-		<item name="augerSchematic" prob="0.05"/>
-		<item name="chainsawSchematic" prob="0.2"/>
-		<item name="ak47Schematic" prob="0.2"/>
-		<item name="firstAidKitSchematic" prob="0.5"/>	
-		<item name="explodingCrossbowBoltSchematic" prob="0.2"/>	
+		<item name="ironChestArmorSchematic" prob="0.2"/>
+		<item name="ironLegArmorSchematic" prob="0.2"/>
+		<item name="ironBootsSchematic" prob="0.2"/>
+		<item name="ironGlovesSchematic" prob="0.2"/>
+		<item name="theEnforcerMagazine" prob="0.1"/>
+		<item name="smgSchematics" prob="0.2"/>
+		<item name="sniperRifleSchematic" prob="0.01"/>
+		<item name="shotgunSlugSchematic" prob="0.4"/>
+		<item name="handleBarsSchematic" prob="0.3"/>
+		<item name="10mmBulletSchematic" prob="0.3"/>
+		<item name="762mmBulletSchematic" prob="0.1"/>
+		<item name="augerSchematic" prob="0.01"/>
+		<item name="chainsawSchematic" prob="0.01"/>
+		<item name="ak47Schematic" prob="0.05"/>
+		<item name="firstAidKitSchematic" prob="0.4"/>
+		<item name="explodingCrossbowBoltSchematic" prob="0.3"/>
 		<item name="rocketLauncherSchematic" prob="0.01"/> 
-		<item name="repeatingCrossbowSchematic" prob="0.3"/>
-		<item name="SeagraveFireaxeSchematic" prob="0.5"/>
+		<item name="repeatingCrossbowSchematic" prob="0.2"/>
+		<item name="SeagraveFireaxeSchematic" prob="0.3"/>
 		<item name="SilenceIsGolden" prob="0.1"/>
 		<item name="steelHelmetSchematic" prob="0.01"/>
 		<item name="steelChestArmorSchematic" prob="0.01"/>
@@ -511,43 +511,43 @@
 	
 	<lootgroup name="commonBooks" count="1">
 	    <item name="book" prob="20"/>	
-		<item name="crossbowSchematic"prob="0.3"/>			
-		<item name="hammerSchematic"prob="0.6"/>	
-		<item name="huntingKnifeBook"prob="0.5"/>
-		<item name="pistolBook"prob="0.1"/>
-		<item name="wrenchSchematic"prob="0.4"/>		
-		<item name="sawedoffPumpShotgunSchematic"prob="0.02"/>
-		<item name="pumpShotgunSchematic"prob="0.01"/>				
-		<item name="huntingRifleSchematic"prob="0.01"/>		
-		<item name="ammunitionNationBook"prob="0.2"/>
-		<item name="shotgunShellSchematic"prob="0.05"/>
-		<item name="9mmBulletSchematic"prob="0.15"/>	
-		<item name="leatherTanning"prob="0.8"/>
-		<item name="leatherBootsSchematic"prob="0.7"/>
-		<item name="leatherHoodSchematic"prob="0.7">
-		<item name="leatherJacketSchematic"prob="0.7"/>
-		<item name="leatherPantsSchematic"prob="0.7"/>
-		<item name="leatherGlovesSchematic"prob="0.7"/>
+		<item name="crossbowSchematic" prob="0.2"/>			
+		<item name="hammerSchematic" prob="0.5"/>	
+		<item name="huntingKnifeBook" prob="0.5"/>
+		<item name="pistolBook" prob="0.05"/>
+		<item name="wrenchSchematic" prob="0.3"/>		
+		<item name="sawedoffPumpShotgunSchematic" prob="0.04"/>
+		<item name="pumpShotgunSchematic" prob="0.03"/>				
+		<item name="huntingRifleSchematic" prob="0.01"/>		
+		<item name="ammunitionNationBook" prob="0.1"/>
+		<item name="shotgunShellSchematic" prob="0.09"/>
+		<item name="9mmBulletSchematic" prob="0.09"/>
+		<item name="leatherTanning" prob="0.5"/>
+		<item name="leatherBootsSchematic" prob="0.6"/>
+		<item name="leatherHoodSchematic" prob="0.6"/>
+		<item name="leatherJacketSchematic" prob="0.6"/>
+		<item name="leatherPantsSchematic" prob="0.6"/>
+		<item name="leatherGlovesSchematic" prob="0.6"/>
 		
 	</lootgroup>
 	
 	<lootgroup name="books" count="1">
-		<item group="rareBooks" loot_prob_template="rareBookTemplate"/>		
+		<item group="rareBooks" prob="0.5" loot_prob_template="rareBookTemplate"/>		
 		<item group="commonBooks"/>
 	</lootgroup>
 	
 	<lootgroup name="militaryguns+ammo">
 		<item group="militaryWeaponParts" />
 		<item group="mp5+ammo" prob="0.05" />
-		<item group="sniperRifle+ammo" prob="0.03" />
+		<item group="sniperRifle+ammo" prob="0.02" />
 		<item group="rocketLauncher+ammo" prob="0.01"/>
 	</lootgroup>
 	
 	<lootgroup name="militaryammo">
-		<item name="10mmBullet" count="10,40" />
-		<item name="762mmBullet" count="5,30" />
-		<item name="shotgunSlug" count="3,7" />
-		<item name="rocket" count="1,4" />
+		<item name="10mmBullet" count="10,40" prob="0.2"/>
+		<item name="762mmBullet" count="5,30" prob="0.05"/>
+		<item name="shotgunSlug" count="3,7" prob="0.1"/>
+		<item name="rocket" count="1,4" prob="0.01"/>
 	</lootgroup>			
 	
 	<lootgroup name="cannedfood">		
@@ -604,8 +604,6 @@
 	</lootgroup>
 	
 	<lootgroup name="junk">	
-	    <item name="ironArrowHead"/>
-	    <item name="steelArrowHead" prob="0.05" />
 		<item name="candyTin"/>
 		<item name="emptyJar" count="1"/>
 		<item name="canEmpty" count="1"/>
@@ -654,7 +652,7 @@
 		<item name="carBattery"  />   
 		<item name="oil" count="1,4" /> 
 		<item name="spring" count="1,4" /> 
-		<item group="rareAutomotive"  /> 
+		<item group="rareAutomotive" prob="0.01"/> 
 	</lootgroup>	
 	
 				
@@ -663,9 +661,9 @@
 		<item name="cowboyHat"/>
         <item name="skullCap"/>
         <item name="ballCap"/>
-        <item name="miningHelmet"/>
+        <item name="miningHelmet" prob="0.01"/>
         <item name="clothHat"/>
-        <item name="footballHelmet"/>     
+        <item name="footballHelmet" prob="0.01"/>     
 	</lootgroup>
 	
 	<lootgroup name="clothes">
@@ -746,13 +744,13 @@
         <item name="ironLegArmor"/>
         <item name="ironChestArmor"/>
         <item name="ironGloves"/>
-        <item name="kevlarHelmet"/>
-        <item name="swatHelmet"/>     
-		<item name="steelBoots"/>
-		<item name="steelGreaves"/>
-		<item name="steelChestArmor"/>
-		<item name="steelBracers"/>
-		<item name="steelHelmet"/>
+        <item name="kevlarHelmet" prob="0.01"/>
+        <item name="swatHelmet" prob="0.01"/>     
+		<item name="steelBoots" prob="0.02"/>
+		<item name="steelGreaves" prob="0.02"/>
+		<item name="steelChestArmor" prob="0.02"/>
+		<item name="steelBracers" prob="0.02"/>
+		<item name="steelHelmet" prob="0.02"/>
 	</lootgroup>	
 	
 	<lootgroup name="Armor">
@@ -781,60 +779,59 @@
 	<lootgroup name="rareTools" count="1">
 		<item name="chainsaw" prob="0.05"/>
 		<item name="chainsawParts" prob="0.1"/>
-		<item name="augerParts" prob="0.01"/>
+		<item name="augerParts" prob="0.02"/>
 		<item name="augerBlade" prob="0.01"/>
 		<item name="chainsawBlade" prob="0.1"/>
 		<item name="hammer" prob="0.5"/>
-		<item name="sledgehammer"prob="0.4"/>
-		<item name="nailgun"prob="0.2"/>
-		<item name="smallEngine"prob="0.01"/>
-		<item name="pickaxeSteel" prob="0.2"/>
+		<item name="sledgehammer" prob="0.6"/>
+		<item name="nailgun" prob="0.2"/>
+		<item name="smallEngine" prob="0.1"/>
+		<item name="pickaxeSteel" prob="0.3"/>
 		<item name="SeagraveFireaxe" prob="0.3" />
-		<item name="sledgehammerSchematic" prob="0.1" />
-		<item name="calipers" prob="0.05" />	
-		<item name="toolAndDieSet" prob="0.05" />		
+		<item name="sledgehammerSchematic" prob="0.65" />
+		<item name="calipers" prob="0.2" />	
+		<item name="toolAndDieSet" prob="0.2" />		
 	</lootgroup>	
 	
 	<lootgroup name="tools" count="1">	
-		<item name="stoneAxe"/>
 		<item name="pickaxeIron"/>
 		<item name="shovel"/>
 		<item name="fireaxe"/>
-		<item name="padlock"/>
+		<item name="padlock" prob="0.2"/>
 		<item name="hoe"/>
-		<item name="wrench"/>
+		<item name="wrench" prob="0.5"/>
 		<item name="repairKit" count="1,4"/>
-		<item group="rareTools"/>
+		<item group="rareTools" prob="0.01"/>
 	</lootgroup>
 	
 	<lootgroup name="workingStiffs" count="1">
-		<item name="pickaxeIron" prob="0.5" />
-		<item name="shovel" prob="0.5" />
-		<item name="fireaxe" prob="0.5" />
-		<item name="hoe" prob="0.5" />
-		<item name="wrench" prob="0.5" />
-		<item name="repairKit" count="1,4" prob="0.1" />
-		<item name="woodFrame" count="10,50" prob="0.1" />
-		<item name="rebarFrame" count="10,50" prob="0.1" />
-		<item name="wood" count="50,250" prob="0.5" />
-		<item name="anvil" count="1" prob="0.1" />
-		<item name="steelDoor1_v1" prob="0.1" />
-		<item name="sledgehammer" prob="0.5" />
-		<item name="sledgehammerSchematic" prob="0.05" />
+		<item name="pickaxeIron"/>
+		<item name="shovel"/>
+		<item name="fireaxe"/>
+		<item name="hoe"/>
+		<item name="wrench"/>
+		<item name="repairKit" count="1,4" prob="0.8" />
+		<item name="woodFrame" count="10,50"/>
+		<item name="rebarFrame" count="10,50" prob="0.5" />
+		<item name="wood" count="50,250"/>
+		<item name="anvil" count="1" prob="0.5" />
+		<item name="steelDoor1_v1" prob="0.8" />
+		<item name="sledgehammer"/>
+		<item name="sledgehammerSchematic" prob="0.2" />
 		<item name="calipers" prob="0.05" />
 		<item name="toolAndDieSet" prob="0.05" />
-		<item group="rareTools" prob="0.05" />
-		<item group="automotive" prob="0.05" />
+		<item group="rareTools" prob="0.1" />
+		<item group="automotive" prob="0.1" />
 		
 
 	</lootgroup>			
 	
 		<lootgroup name="rareMedicine" count="1">	
 		<item name="firstAidKit" />		
-		<item name="beaker" prob="0.01"/>
+		<item name="beaker"  prob="0.01"/>
 		<item name="antibiotics" />
-		<item name="bloodDrawKit" prob="0.01"/>
-		<item name="firstAidKitSchematic" prob="0.01"/>
+		<item name="bloodDrawKit"  prob="0.03"/>
+		<item name="firstAidKitSchematic"  prob="0.02"/>
 	</lootgroup>
 		
 	<lootgroup name="medicine" count="1">	
@@ -852,7 +849,7 @@
 	<lootgroup name="sportingGoods" count="1">
 
         <item name="flashlight02"/>  
-        <item name="huntingKnife"/>  
+        <item name="huntingKnife" prob="0.7"/>  
         <item name="gunPowder" count="20,50"/>
         <item name="bulletCasing" count="20,50"/>
         <item name="bulletTip" count="20,50"/>
@@ -881,7 +878,12 @@
         <item name="plaidShirtBrown"/>
         <item name="footballHelmet"/>
         <item name="brownDenimPants"/>           
-        <item name="steelArrowHead" count="20,50"/>
+        <item name="steelArrowHead" count="3,10" prob="0.7"/>
+		<item name="crossbowBolt" count="3,10" />
+		<item name="arrow" count="3,100" />
+		<item name="ironArrow" count="3,30" prob="0.8"/>
+		<item name="steelArrow" count="3,30" prob="0.6"/>
+		<item name="ironArrowHead" count="6,60" prob="0.9"/>
 	</lootgroup>	
 
 	<lootgroup name="beverages" count="1">	
